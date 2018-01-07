@@ -1,8 +1,8 @@
-# Vuejs Rollup Boilerplate
+# Vue.js Rollup Boilerplate
 *Simple Rollup Vue.js Boilerplate with `vuex`,`vue-router`,`hot-reload`*
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/goriunov/vuejs-rollup-boilerplate/master/dist/assets/vue.png" width="600">
+ <img src="https://raw.githubusercontent.com/goriunov/vuejs-rollup-boilerplate/master/dist/assets/vue.png" width="500">
 </p>
 
 ## Usage

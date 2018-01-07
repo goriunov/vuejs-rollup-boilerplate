@@ -12,6 +12,8 @@ git clone https://github.com/goriunov/vuejs-rollup-boilerplate.git
 cd vuejs-rollup-boilerplate
 npm install
 npm start
+
+// Do what ever you want with this, for more commands check package.json
 ```
 
 Thanks to [vue-rollup-boilerplate repo](https://github.com/dangvanthanh/vue-rollup-boilerplate).

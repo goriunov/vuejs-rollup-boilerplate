@@ -1,7 +1,7 @@
 {
   "name": "vuejs-rollup",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vue.js Rollup boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "rollup -c -w --environment NODE_ENV:dev,PORT:8080",
@@ -9,7 +9,7 @@
     "build:prod": "rollup -c --environment NODE_ENV:prod",
     "postinstall": "rollup-watch-fix"
   },
-  "author": "",
+  "author": "Dmitrii Goriunov",
   "license": "ISC",
   "dependencies": {
     "vue": "^2.5.13",

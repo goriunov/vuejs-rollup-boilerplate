@@ -1,15 +1,12 @@
 <template>
   <div class="app">
-    <hello></hello>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Hello from "./Hello.vue";
 export default {
-  name: "app",
-  components: { Hello },
-  methods: {}
+  name: "app"
 };
 </script>
 

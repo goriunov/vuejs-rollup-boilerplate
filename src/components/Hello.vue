@@ -1,15 +1,16 @@
 <template>
   <div>
+    <img src="assets/vue.png">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "hello",
+  name: "Hello",
   data() {
     return {
-      msg: "Vue.jss - The Progressive JavaScript Framework"
+      msg: this.$store.getters.message
     };
   }
 };

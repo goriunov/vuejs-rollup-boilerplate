@@ -36,12 +36,11 @@ let plugins = [
     commonjs(),
     nodeGlobals(),
     copy({
-        'src/index.html': 'dist/index.html',
-        'src/assets': 'dist/assets'
+        'src/index.html': 'dist/index.html'
     }),
     process.env.NODE_ENV === 'prod' && replace({ 'process.env.NODE_ENV': JSON.stringify('production') }),
     process.env.NODE_ENV === 'prod' && uglify(),
-    process.env.PORT !== undefined && livereload(),
+    process.env.NODE_ENV !== 'prod' && process.env.PORT !== undefined && livereload(),
     process.env.PORT !== undefined && serve({
         contentBase: './dist/',
         port: process.env.PORT,
@@ -56,7 +55,6 @@ let config = {
         format: 'iife',
         sourcemap: process.env.NODE_ENV !== 'prod'
     },
-
     plugins: plugins
 }
 

@@ -35,9 +35,7 @@ let plugins = [
     }),
     commonjs(),
     nodeGlobals(),
-    copy({
-        'src/index.html': 'dist/index.html'
-    }),
+    copy({ 'src/index.html': 'dist/index.html' }),
     process.env.NODE_ENV === 'prod' && replace({ 'process.env.NODE_ENV': JSON.stringify('production') }),
     process.env.NODE_ENV === 'prod' && uglify(),
     process.env.NODE_ENV !== 'prod' && process.env.PORT !== undefined && livereload(),
